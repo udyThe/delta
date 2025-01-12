@@ -1,0 +1,12 @@
+/* write css statement for the following  */
+/* set the color for the paragraph inside divs with the id = my id to green */
+
+div[id=myid] p {
+    color: green;
+}
+
+/*  as we dont know if the child is direct or not so we use decendent selector */
+
+#myid p{
+    color: green;
+}

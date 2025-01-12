@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js part 5</title>
+    <script src="app 5.js" ></script>
+</head>
+<body>
+    <h2>object literal</h2>
+    <p>this is like the dictionaries from python ... this literal have keys with pairs in it...the order may not be defined  but the values appear in pairs eg
+         <br>const object_literal = { <br>
+            name: 'uday', <br>
+            age: 19,<br>
+            cgpa:7.3 <br>
+        };<br>
+        <br>
+        let object_literal1 = { <br>
+            price: 100.99, <br>
+            discount: 50, <br>
+            color: ['red','pink', 'white'] <br>
+        }; <br>
+         <br>
+        
+    </p>
+
+    <h2> create a  post (will use object)</h2>
+    <p>in the console</p>
+
+    <h2>get values</h2>
+    <p>now we have created the object ...now how can we access the values from it, ... so we use:-  object_name[key] <br> eg
+    post['reposts'].....THIS will get the values of the repost from the object 'post' <br> there is another way too.... by using '.' operator (dot).... we can write 'post.repost'  for the access of the value. ... we can assign variable using the previous method but nnot this...for eg <br> let property = "repost" <br> this will assign the repost to 'property' now we can access lile... post[property]...  <br> we can only use variable as this method only  not the dot method  </p>
+    <p>object automatically turns the key to string even it is number or anything eeg
+         <br> obj[1]
+         <br> here this '1' is first turned into string then matched from the object literal then value is returned ..not as it takes value in integer ...but similarly if we do 'obj.1' this wont work as this dot operator does not convert value in string    </p>
+
+    <h2>add and update values in obj literal </h2>
+    <p> eg ... student.city = "mumbai;"  this will set the city to mumbai ..here city was existing<br> but in case when the element is not existing  for eg.. gender....we can just set the value and it will create another entry in the obj literal </p>
+
+
+    <H2>nested obj</H2>
+    <p>obj can be nested also like loops</p>
+
+    <h2>array of obj</h2>
+    <p>similar....just make the elements of the array as objects </p>
+
+    <h2>math object</h2>
+    <p>Math.PI and Math.E ....we porlly gonna use Math.abs more....returns absolute value...like turns negative to positive</p>
+    <p>Match.pow(2,4) is used for 2^4 ...that is 16.....Math.floor...gives the nearest smaller whole value..eg 5.9 = 5...-5.5 = -6</p>
+    <p>Math.ceil ...similar to floor but only the larger number is returned</p>
+    <p>math.random() ...returs the random value from 0 to 1....i.e 0.345352</p>
+
+    <h2>random integer</h2>
+    
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<% layout("/layouts/boilerplate.ejs") %>
+    <div class="row mt-3">
+        <div class="col-md-8 offset-2"> required
+            
+            <h3>Edit Listing</h3>
+            <br>
+            <form action="/listing/<%=editlisting.id%>?_method=PUT" novalidate class="needs-validation" method="post">
+                <input type="hidden" name="id" value="<%=editlisting.id%>">
+        
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label><br>
+                    <input type="text" class="form-control" name="title" id="title" value="<%=editlisting.title%>" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description</label><br>
+                    <textarea class="form-control" name="description" id="description" cols="30"
+                        rows="10" required><%=editlisting.description%></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="Image">Image</label><br>
+                    <input type="text" class="form-control" name="image" id="image" value="<%=editlisting.image%>">
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label class="form-label" for="price">Price</label><br>
+                        <input type="number" class="form-control" name="price" required id="price" value="<%=editlisting.price%>">
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label class="form-label" for="country">Country</label><br>
+                        <input type="text" class="form-control" name="country" id="country" required value="<%=editlisting.country%>">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location</label><br>
+                    <input type="text" class="form-control" name="location" id="location" required value="<%=editlisting.location%>">
+                </div>
+        
+        
+        
+                <button class="btn btn-dark mb-3" style="background-color: #fe424d;border: none; ">Update</button>
+        </div>
+    </div>
+
+
+    </form>

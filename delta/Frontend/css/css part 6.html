@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS part 6</title>
+</head>
+<body style="background-color: lightcoral;">
+    <h1 style="text-align: center;">CSS part 6</h1>
+    <h2>grid</h2>
+    <p>grid is just like flex box but the difference is that it is in 2d instead of 1d and.... but in most cases in websits flexbox is used instead of grid....it is usually used in things like tables</p>
+
+    <h2>grid model</h2>
+    <p>1. grid lines are those which are the rows or column ones <br> 2. grid cell is which was formed by the interaction of hte grid row line and column line <br>3. and the grid track is the area between two grid lines</p>
+    <h2>grid template</h2>
+    <p>grid template row - it sets the rows size and number of rows is determined by the number of size declared....eg grid-template-rows: 100px 100px 100px;</p>
+    <p> similarly is the system with the columns.....for eg- grid-template-rows: 100px 100px 100px;....here the number of columns are 3 ...and obviously the number of grid lines are 4 as it it n+1(n=number of the column)</p>
+    <p>grid method in which we can put the number of count of the rows or columns .....eg grid-template-rows: repeat(5,1fr)....here we use repeat for this...and 5 tells the number of rows...1 fr is the meaning that one fration of the whole width </p>
+     
+    <h2>grid gaps</h2>
+    <p>eg ....row-gap: 10px;....column-gap:10px;....grid-gap: 10px 10px; <br> here as we can see that how row gap and row gap works ...the third one shows the combines one as a shorthand.</p>
+
+    <h2>grid columns</h2>
+    <p>defines an items starting and ending position  inside the column.....eg <br>grid-column-start: 1; <br>grid-column-end: 3; <br>so in this case we can assign the item to occupy multiple cell rahter than just one....short hand can also be used ... grid-colum: 1/4;....this will end on line 4</p>
+
+    <h2>grid rows</h2>
+    <p>same is with the rows</p>
+
+    <h2>grid properties</h2>
+    <p>pfft...already know....justify items is used for horizontal adjustment and align-item is used for vertical adjustment <br> the new thing is that ...place-items: start; ...is used for when the specification is same for the rows and columns ...and the self one like justify-self and all is used for the individual ones </p>
+
+
+    <h2>animations in CSS</h2>
+    <p>the syntax for the animation is ... <br>@keyframes name_of_animation{ <br>} <br>... in these culr braces the blueprint of animation is defined and then it is linked in the div in which the animation is supposed to be appplied </p>
+
+    <h2>animation short hand </h2>
+    <p>animation: name duration timing-function delay iteration-count direction fill-mode;  <br> this is the short hand for it</p>
+
+    <h2>% in animation</h2>
+    <p>till now we were using from and to....which used to do it from 0 to 100% ......to apply the animation is stages we use percentage.... <br> like <br> 0%{ <br>} <br> 50% {<br> }  <br> and assign properties between them ..like if we want to change the color to wheat on 30% and blue on 70 % ....i could just define it and it will change accordingly </p>
+
+    <h2>media queries</h2>
+    <p>these are used to make the website responsive ....like we can give specification to change properties on a specific or in a range of width or something/..... we can also give range line from this to this...like min max wala system <br>@media (min-width:700px) and (max-width:900px)  { <br>
+        h1{ <br>
+            background-color: blueviolet; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; } <br>
+    } <br>
+    </p>
+
+    <h2>media queries (orentation)</h2>
+    <p>this is just the same but we give the parameter 'landscape' in this case</p>
+
+
+    <h2>z index</h2>
+    <p>it decides the stack level of elements...like kon uper aaega and kon neeche...if 2 divs overlaps eachother then z index decided which one will come to front...the greater index one..default is 0     </p>
+
+</body>
+</html>

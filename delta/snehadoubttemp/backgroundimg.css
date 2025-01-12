@@ -1,0 +1,15 @@
+#bc{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    margin: 0;
+}
+
+#abc{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    display: inline-block;
+    margin: 0;
+}

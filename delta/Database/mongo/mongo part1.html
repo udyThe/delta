@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDb</title>
+</head>
+<body style="background-color: beige;">
+    <h1 style="text-align: center;">MONGO DB</h1>        
+    <h1 style="text-align: center;">(sadly here everything is case-sensitive)</h1>
+    <br><br><br>    
+    <ul>
+    <li><h2>db.student.find()</h2><p>userd to show to the data in the collection</p></li>
+    <li><h2>db.student.insertMany ([{name: 'priyanshu', marks: 80, spec: 'ccvt' , state:'uk'}, {name: 'namit', age:20}, {name : 'ayush', spec: 'ccvt', age: 21}])</h2><p>here multiple data is inserted , an array is passed with values in it as objects</p></li>
+    <li><h2>db.student.find({city: {$in: ['delhi','mumbai']}})</h2>    <p>used to find from multiple options ...searched from an array</p></li>
+    <li><h2>db.student.find({$or: [{city: 'mumbai'},{marks:{$gt: 70}}]})</h2><p>one more example for a complex one</p></li>
+    <li><h2>db.student.find({$or: [{city: {$in: ['mumbai','delhi']}},{marks:{$gt: 70}}, {state: {$in:['rajasthan','uk']}}]})</h2><p>one more</p></li>
+    <li><h2>db.student.updateOne({spec:'ccvt'},{$set:{name:'Ayush', age:18}})</h2><p>used to upadte with set values</p></li>
+    <li><h2> db.student.updateMany({age:{$gt: 21}},{$set:{college: 'upes'}})</h2><p>used to update many values </p></li>
+    <li><h2> db.student.replaceOne({name:'Ayush'},{name:'ayush', note:'hes a good friend thats all we need to know', age: 21, college:'upes'})</h2><p>used to replace the whole document values with the new onw, instead of updating it , whole new values are passed...but the id remains the same as before</p></li>
+    <li><h2>db.student.updateMany({},{$set:{markss:{maths:10, grade: 'a'}}})</h2><p>here in updatemany the conditions is not passed , that means ki dont check for any condition, just apply this shit to everything</p></li>
+    <li><h2>db.student.find({'markss.maths':10})</h2><p>this is used to get value from the object within the document, to to refer to it, '.' dot is used and passed in as a string</p></li>
+    <li><h2> db.student.deleteMany({})</h2><p>used to depete without looking at any conditions</p></li>
+    <li><h2> db.dropDatabase()</h2><p>drops the database here</p></li>
+
+</ul>
+    
+</body>
+</html>

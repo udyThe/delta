@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css part 2</title>
+    <style></style>
+</head>
+
+<body style="background-color: wheat;">
+    <h1 style="text-transform: capitalize; text-align: center;"><span style="text-transform: uppercase;">css</span> part
+        2</h1>
+    <br><br><br><br><br><br>
+    <h3 style="text-transform: capitalize;">Selectors in css</h3>
+    <p>selectors like 'h' we use selectors in css to select those on which we want to apply style on <br>
+        there is a universal with wich we can select everything that is - astirisk '*' <br>
+        <b>1. element selectors </b> are those selectors which we were using till now like 'h' which selects all
+        headings <br>
+        <b>2. id selectors</b> - as we assign id to components in html we can select them ...they cannt start with numbers...they may contain but cannnot start wiht numver<b>using id by - #-id- </b>
+        <br>
+        <b>3. class selectors</b> - we can define class name in inline style in html with the elemect we wanna group as
+        class
+        ....just assign class in the elect 'h' or whatever <br>
+        <b>4. decendant selectors</b> - they are like parent child relation.....like div < p then it will only select
+            those paragraph with div in them</p>
+
+            <h3 style="text-transform: capitalize;">sibling combinator</h3>
+            <p>if 'h3 + p' is written then only those paragraph will be selected which are writtedn just after h3
+                headings <br>
+                here '+' is the combinator</p>
+
+            <h3>child combinator</h3>
+            <p>if 'span > button' is written that means it will select buttons only which are directly after the span
+                ...unlike
+                decendent selectors which can skip any number of element <br> here '>' is the combinator</p>
+
+            <h3>attribute selector</h3>
+            <p>in this type we can just give the attribute of any and apply the property...example
+                <br><br>input[type="text"]{ <br> } <br> <br>
+                here giving property in square braces in necessary (no spaces between in input and square braces)
+            </p>
+
+
+            <h2>psudo class</h2>
+            <p>a keyword that specifies the special state of the selected element <br>some types are mentioned <br>1.
+                hover <br>2. active <br>
+                3. checked <br> 4. nth-of-type</p>
+            <p>to define a psudo class we use .... colon (:) after the specofoed element</p>
+
+            <h3>1. hover</h3>
+            <p>it is a style which is applied to the the element when hovered by mouse cursor <br>but in the
+                case in css when some property is already defined using # or id ....then this does not take effect
+                ....its like priority</p>
+
+
+            <h3>2. active</h3>
+            <p>it is a style which is applied when a element is clicked on ... <b> not hovered</b></p>
+            <h3>3. checked</h3>
+
+            <h3>4. nth-of-type</h3>
+            <p> for example: like if we want to color every odd number from a list to yellow....we use nth-of-type <br>
+                <br>
+                div:nth-of-type(2n){ <br>
+                background-color: blanchedalmond; <br>
+                } <br> <br>
+                so the 'n' here works as repeation ...it counts to 2 and then starts again counting from 1
+            </p>
+
+            <h2>psudo element</h2>
+            <p>we use double colon :: like this...single colon would also work but we will use 2</p>
+            <p>some types are <br>1. first letter <br>2.first line <br>3. selection <br> <br> <b>example</b> <br><br>
+                h1::first-letter{ <br>
+                color: green;<br>
+                } <br>
+            </p>
+
+            <h2>cascading and specificity</h2>
+            <p>specificity is the priority given to the property declared in the css file <br> 1. id> (class= attribute=
+                psudo-class..that hover and all)
+                > (element = psudo-element...that first letter and line thing) <br> 2. more selectors is better than
+                less selectors
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>more selectors> less selectors</b> <br> 3. if specificity is
+                same then cascading <br>
+                is checked...basicallly it means whichever comes last, that property will be applied <br>
+                &#x2022; <b>if multiple files of css is atteched to html file...then then the contradicting property
+                    will be applied of the css file which was attached at the end </b>
+            </p>
+            <h3>inline specificity</h3>
+            <p>what if what if the style of element is already defined in the html, then it would give the highest
+                priority and it can not changed...though inline css in not recommended</p>
+
+            <h2>!important</h2>
+            <p>this is the highest priority for css properties...where ever this is assigned ...it is absolute ...it
+                have more priority then inline itsel.but this is not ususally used</p>
+            <p>!important is put after the property and then the semi colon is put</p>
+
+            <h2>inheritance</h2>
+            <p>in this ...the properties is inherited by the child elements by their parents properties... <br>for
+                example if i define a color for div then the elements will also have the properties of div. <br><b>but
+                    in some case its dosent work like that</b> some elements like input or buttons does not inherit
+                properties from anybody...we have to assign seperatly in css by typing <br> ' color: inherit; ' <br>
+                then they will inherit</p>
+            <p>&#x2022; some properties can not be inherited like width, height, border...etc in this case we have to
+                set the property individually</p>
+
+</body>
+
+</html>

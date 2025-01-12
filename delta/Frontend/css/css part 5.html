@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS part 5</title>
+</head>
+<body style="background-color: wheat;">
+    <h1 style="text-align: center;" ><b>CSS part 5</b></h1>
+    <h2>Flexbox</h2>
+    <p>it is a one dimentional layout method for arranging items in rows or columns. this is used to make the website resposnive and adjust according to the screen available for it.... a flex model is used in this ...in which we give the element flex properties and we emagine axis across the screen ...pretty confusing rn will learn ahead</p>
+    <h2>display flex</h2>
+    <p>the flex function is defaultly works in row direction we can specify the direction by 'flex-direction'...it fits everything inside the parameters</p>
+
+    <h2>flex direction</h2>
+    <p>it sets how the flex items are placed in the flex container, along which axis and direction... <br>
+        flex-direction: row; the default main axis is left to right<br> 
+        flex-direction: row-reverse; this makes it to right to left <br>
+        flex-direction: column; default main axis is top to bottom<br>
+        flex-direction: column-reverse;  this makes it bottom to top <br>
+    </p>
+    <br> like the ements are arranged accordingly 
+
+    <h2>justify content</h2>
+    <p>in this the content spaceing is handeled ...it also manages the start point too...eg. justify-content: flex-start; (flex-end, cener)</p>
+    <p>and then theres that which controlls tbhs space ....this space putting works in main axis direction....eg space-between, space-around space-evenly</p>
+    <h2><b>#main axis is the row in which items are aligned and the 90deg opponent is the cross axis</b></h2>
+    <h2>flex wrap</h2>
+    <p>this is used to wrap the context...suppose the content width is more  and the fllex adjusts all element in row/column but u wont want it ...so flex wrap set the desired the size and pushes the next element in next row/column....there are three types, <br> 1. no wrap <br> 2. wrap  <br> 3. wrap-reversed which reverses the content across the cross axis which is 90 deg to tha main axis  <br></p>
+    <h2>align items</h2>
+    <p>distributes out items along the cross axis. it have some types <br>1. justify-content: flex-start <br> 2. justify-content: flex-end <br> 3. justify-content: center <br> 4. align-item: baseline => in this the priority is given to the content to the content written in it rather than the size of div or anything</p>
+
+    <h2>align content</h2>
+    <p>it distributes the space between and around the content items along the flexbox's cross axis .... there are 4 types <br> 1. align-content: flex-start/ flex-end/ center <br>2. align-content: space-between/ space around/ evenly <br>3. align-content: baseline</p>
+
+    <h2>align self</h2>
+    <p>till now we used to align the container not the individual ones....  but with this we can align the individual ones too along cross axis .... there are 4 types <br>1. align-self: flex-start <br>2. align-self: flex-end <br> 3. align-self: center <br> 4. align-self: baseline <br> it is just line align-items the only difference is the this is applied to an individual and that is applied to the group <br><b> the priority of the self one is greater than the group one</b> </p>
+
+    <h2>felx sizing</h2>
+    <p>it is the assignment of size to the items in the container</p>
+    <h3>flex-basis</h3>
+    <p>it sets the initial main size of the flex item....here the main size mean the height/width according to the rox or column assignment of the flex-direction....if its row then main size would be width ....and vice versa </p>
+    
+    <h3>flex grow</h3>
+    <p>it specifies how much of the flex container's remaining space should be assigned to the flex item's main size .... ex- flex-grow: 1 <br>here the '1' is used for proportions ... like if not defined for any other ...then the one specified with this will take up the whole remaining space in the container...in this min-width: 100px can also be set and max-width: 400px could also be set </p>
+    <h3>flex shrink</h3>
+    <p>it sets the skrink factor of the flex item.... it is also set in the form of '1' ...ex flex-shrink: 1; ....this means if the items are overflowing in size ...then it would shrink....if the shrink factor is given in factor of 1 and a specific element is givenm 2..... then it would be 2 factor smaller then others </p>
+    <h2>flex shorthand</h2>
+    <p>this is used to declare all stuff like grow shrink basis in just one line <br>...first comes grow then shrink then basis <br>....ex flex: 2 3 100px;   ... in this the grow is 2 and shrink is 3 and basis is 100px  </p>
+</body>
+</html>

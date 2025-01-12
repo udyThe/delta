@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css part 1</title>
+    <!-- <style>
+        h1 {
+    color: rgb(17, 112, 222); background-color: pink;
+    }
+    h2{
+        color: aqua;
+    }
+    ul {
+        color: chartreuse;
+    }
+    </style> -->
+
+    <link rel="stylesheet" href="css part 1.css">
+</head>
+
+<body>
+    
+        <header>
+            <h1>Uday Surothiya</h1>
+            <img src="uday.jpeg" alt="uday" height="200">
+        </header>
+        <hr>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>senior secondarypassed out</li>
+                <li>high school pass out</li>
+                <li>currently pursuing btech in cs</li>
+                <li>prabhakar in tabla</li>
+            </ul>
+            <hr>
+            <h2 style="color: blueviolet;">Skills</h2>
+            <ol type="i">
+                <li>fast typing</li>
+                <li>good at communication</li>
+                <li>team work</li>
+                <li>public speaker</li>
+            </ol>
+            <hr>
+            <h2>Hobbies</h2>
+            <ul>
+                <li>listening to music</li>
+                <li>singing</li>
+                <li>doing wood craft work</li>
+                <li>teaching people what i know</li>
+            </ul>
+        </section>
+        <hr>
+        <footer>
+            <h2>Contact</h2>
+            <ul>
+                <li>phone number - 9999999999 </li>
+                <li>email id - udaysurothiya@gmail.com</li>
+                <li>address - bps pilani</li>
+            </ul>
+            <hr>
+        </footer>
+
+        <h4>this resume is more readble as seo will rank this upper than regular html as this is having semmentic markup
+        </h4>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+        <hr>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <h2>there are three ways to use css in html</h2>
+        <p>1. inline css <br> - where we write the stlye in the 'h' element or 'button' element etc</p>
+        <p>2. in the 'head' of the html file <br> - where we write all the styling in the head and it is applied
+            throughout the file
+            (but in website it is not usful as we make multiple html files and for that we have to write csss for each
+            of them seperatly
+            which is unconvinient)</p>
+        <p>3. another css file itself <br> - where we create a seperate styling file in css and just link the css file
+            to the html file by putting the
+            address of the css in the head by link</p>
+
+        <h2>colour element</h2>
+        <p>this is used in c to colour the foreground not the background</p>
+        
+        <h2>background-colour element</h2>
+        <p>this is used to colour the background and only background similar to this is another 'background' but this
+            can be used in images also
+            in most case we will be using the background-colour option
+        </p>
+
+
+
+        <h2>color sytem</h2>
+        <p>there is an rgb type of system and hex system in which we give color number out of 255 from red green and blue
+            and in hex it is written in # and after the numbers of rgb
+        </p>
+
+
+        <h2>text properties</h2>
+        <p>1. text-align <br> 2.font weight <br>3. text decoration <br>4.line height <br>5.letter spacing <br>6. font size</p>
+        
+        <h3>text align properties</h3>
+        <p>text-align: left/start</p>
+        <p>text-align: right/end</p>
+        <p>text-align: center</p>
+        <p>text-align: justify</p>
+
+        <p style="color: blue;"><b>example:</b></p>
+        <br>
+
+        <p style="text-align: end;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        <p style="text-align: start;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        <p style="text-align: center;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        <p style="text-align: justify; width: 10%;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        
+
+        <h3>text decoration</h3>
+        <p>text-decoration: underline</p>
+        <p>text-decoration: overline</p>
+        <p>text-decoration: line-through</p>
+        <br> <p style="color: black;"><b>example</b></p>
+        
+        
+        <div style="text-align: end;">
+        <p style="text-decoration: underline; text-decoration-color: green;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        <p style="text-decoration: blue overline">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        <p style="text-decoration: line-through">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        <p style="text-decoration: wavy line-through">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        <p style="text-decoration: dotted silver underline">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+        
+    </div>
+
+    <p>mostly text decoration is used for underline and removing the under preappeared in anchor tag</p>
+    
+    <a href="https://www.google.com" style="text-decoration: none;">Google me</a>
+
+    <p>assign 'none' in text decoration in order to remove the underline from the anchor tag </p>
+
+
+    <h2>line height</h2>
+    <p>this is used to increase or decrease the line height <br> by default the height is normal to increase we could write 2*normal or 0.5*normal to decrease it </p>
+    <div style="text-align: end;">
+    <p style="line-height: 3;">this is the test for alignment of text and <br> we are gonna sussfully do it</p> <br>
+    </div>
+    <p>we can see that the space between line is increased</p>
+
+    <div style="text-align: end;">
+        <p style="line-height: 0.5;">this is the test for alignment of text and <br> we are gonna sussfully do it</p> <br>
+    </div>
+
+    <p>we can see that the space between line is decereased</p>
+
+
+    <h2>letter spacing</h2>
+    <p>this is used to increase or decrease the letter spacing....horizontal space</p>
+    <p style="letter-spacing: 5px;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+
+
+    <h2>units in css</h2>
+    <p>there are twi types of size: <br> 1. absolute <br> 2.relative </p>
+    <p>absolute</p>
+    <div>
+    <ul>
+        <li>px</li>
+        <li>pt</li>
+        <li>pc</li>
+        <li>cm</li>
+        <li>mm</li>
+        <li>in</li>
+    </ul> 
+    <p>relative</p>
+    <ul>
+        <li>%</li>
+        <li>em</li>
+        <li>rem</li>
+        <li>ch</li>
+        <li>vh</li>
+        <li>vw + many more</li>
+    </ul>
+</div>
+    <p>most popular absolute size is pixle.... 96px = 1 inch </p>
+
+    <p style="color: black;"><b>example</b></p>
+
+    <p style="font-size: 30px; text-align: end;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+    <p style="font-size: 100%; text-align: end;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+    
+   <h3>font - family</h3> 
+    <p style="font-family: Arial, Helvetica, sans-serif ;">this is the test for alignment of text and we are gonna sussfully do it</p> <br>
+
+    <p><b>#</b>we write other font styles as priority wise..... just in case if the browser dosent support the first style it can go for the other style </p>
+
+    </html>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h1,h3{
+    color: #b92b27;
+}
+#login{
+    background-color: white;
+}
+#signup {
+    background-color: #b92b27;
+    color:  white;
+}
+.upvote {
+    background-color: green;
+    color:  aliceblue;
+}
+h3{
+    color: beige !important;
+}
+.post a {
+    color:  purple;
+    text-decoration: none;
+    background-color: yellow;
+}
+nav ul li a {
+    color: hotpink;
+    text-decoration:  none;
+}
+
+p + h3 {
+    text-decoration:  underline;
+}
+
+.upvote + button {
+    background-color: cornflowerblue;
+    color:  darkblue;
+}
+
+div > input {
+    background-color: darksalmon;
+}
+
+input[type="text"] {
+    color: red;
+}
+input[type="password"] {
+    color: green;
+}
+
+input[type] {
+    background-color: ghostwhite;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: overline;
+}
+input[type=radio]:checked + label{
+    color: #b92b27;
+    text-decoration: underline;
+}
+
+/* here we had to use sibling combinator as we couldnt had done it with regular style as we are appling property on radio buttons and we expect 
+the effect to reflect on the label...so we use the sibling combinator to do it  */
+
+
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+h1::first-letter{
+    color: green;
+}
+
+p::first-line{
+    color: blue;
+}
+
+*::selection{
+    background-color: aqua;
+}

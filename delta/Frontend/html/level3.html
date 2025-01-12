@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 3</title>
+</head>
+
+<body>
+    <table border="black">
+        <caption>food&nbsp;menu</caption>
+        <tr>
+            <th>food item</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>frooti</td>
+            <td>10rs</td>
+        </tr>
+        <tr>
+            <td>samosa</td>
+            <td>12rs</td>
+        </tr>
+        <tr>
+            <td>chips</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>elements used in tables</h2>
+    <p>i. 'td' is used for entering data</p>
+    <p>ii. 'tr' is used for enter data in row</p>
+    <p>iii. 'th' is used for making and row a header</p>
+
+
+    <h2>sementics in tables</h2>
+    <p>sementics like header footer body....</p>
+
+
+
+    <table border="black">
+        <caption>food&nbsp;menu</caption>
+        <thead>
+            <tr>
+                <th>food item</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>frooti</td>
+                <td>10rs</td>
+            </tr>
+            <tr>
+                <td>samosa</td>
+                <td>12rs</td>
+            </tr>
+            <tr>
+                <td>chips</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>here 'thead' is used to wrap header data into the header semmentic and 'tbody' in the body sementic</p>
+    <p>we also use 'tfoot' in other tablbes were needed...like to wrap data of sum of the list of items</p>
+
+
+    <h2>colspan and rowspan</h2>
+
+    <table border="black">
+        <caption>food&nbsp;menu</caption>
+        <tr>
+            <th rowspan="2">food item</th>
+            <th colspan="2">price</th>
+        </tr>
+        <tr>
+            <th>INR</th>
+            <th>USD</th>
+
+        </tr>
+        <tr>
+            <td>frooti</td>
+            <td>10rs</td>
+            <td>0.14</td>
+        </tr>
+        <tr>
+            <td>samosa</td>
+            <td>12rs</td>
+            <td>0.17</td>
+        </tr>
+        <tr>
+            <td>chips</td>
+            <td>20rs</td>
+            <td>0.28</td>
+        </tr>
+    </table>
+    <br>
+
+    <hr>
+
+    <h2>forms</h2>
+    <p>these forms are used to collect data and process it</p>
+    <p>action attribute is used to define what action needs to be performed when a form is submittedor where the form
+        data should be sent</p>
+
+    <form action="blah blah"></form>
+    <br>
+    <br>
+
+    <h2>input element</h2>
+    <p>this is the most important and is used to create multiple form controls</p>
+    <p>there are multipletypes of form control can be created by using "type" attribute</p>
+
+    <form action="">
+        <input type="text">
+    </form>
+
+    <p><b>some examples</b></p>
+    <p>i. input ></p>
+    <p>ii. input type="text"</p>
+    <p>iii. input type="password"</p>
+    <p>iv. input type="number"</p>
+    <p>v. input type="time"</p>
+    <p>vi. input type="color"</p>
+
+    <form action="">
+        username
+        <input type="text"><br>
+        number
+        <input type="number"><br>
+        date
+        <input type="date"><br>
+        color
+        <input type="color"><br>
+        password
+        <input type="password"><br>
+        time
+        <input type="time"><br>
+
+    </form>
+
+    <h2>place holder and labels</h2>
+    <p>this is the name showed in the bank that tells the user what to fill</p>
+    <p>till now we used to write 'username' etc seperate in a paragraph element but it was not assiciated with the inout
+        elements
+        so instead we use <b>label</b> element for assiciating with the input of form element
+    </p>
+
+    <form action="">
+        <label>
+            username
+            <input type="text" placeholder="username"><br>
+        </label>
+        <label>
+            number
+            <input type="number" placeholder="phone number"><br>
+        </label>
+        <label>
+            date
+            <input type="date" placeholder=" date of birth"><br>
+        </label>
+        <label>
+            color
+            <input type="color" placeholder="colour"><br>
+        </label>
+        <label>
+            password
+            <input type="password" placeholder="enter password"><br>
+        </label>
+        <label>
+            time
+            <input type="time" placeholder="enter the time"><br>
+        </label>
+
+
+    </form>
+
+    <br>
+    <br>
+    <p>but this not good approach for label</p>
+    <p>this is the classical approach</p>
+
+    <form action="/action">
+        <div>
+            <label for="username">username: </label>
+            <input type="text" id="username" placeholder="username"><br>
+        </div>
+        <div>
+            <label for="phonenumber">phone number: </label>
+            <input type="number" id="phonenumber" placeholder="phone number"><br>
+        </div>
+        <div>
+            <label for="dob">dob: </label>
+            <input type="date" id="dob" placeholder=" date of birth"><br>
+        </div>
+        <div>
+            <label for="color">colour: </label>
+            <input type="color" id="color" placeholder="colour"><br>
+        </div>
+        <div>
+            <label for="password">password: </label>
+            <input type="password" id="password" placeholder="enter password"><br>
+        </div>
+        <div>
+            <label for="time">time: </label>
+            <input type="time" id="time" placeholder="enter the time"><br>
+        </div>
+
+        <button>submit</button>
+    </form>
+    <br>
+    <hr>
+
+    <h2>button element</h2>
+    <p>there are 3 types of buttons</p>
+    <p>1. submit button</p>
+    <p>2. button button</p>
+    <p>3. reset button</p>
+    <p>usually the buttons are used in a form but can also be used outside the form</p><BR></BR>
+
+    <form action="/server">
+        <label for="student name">student name</label>
+        <input type="text" placeholder="student name" id="student name"> <br>
+        <label for="pmoney">pocket money</label>
+        <input type="password" placeholder="pocket money" id="pmoney"> <br>
+
+        <input type="submit" value="click me"> <br>
+        <button type="submit">Submit</button> <button type="reset">reset form</button> <button type="button"> simple
+            button</button>
+    </form>
+
+    <p>theres another method to make button from input <b>but that is not adviced</b></p>
+    <p>
+        < input type="password" placeholder="pocket money" id="pmoney">
+    </p>
+
+
+    <h2>name attribute</h2>
+    <p>it is used inside input element and is important for backend as teh data submitted is send in the pair of name
+        and value </p>
+    <p>example</p>
+
+    <form action="https://www.youtube.com/results?">
+        <label for="search">search</label>
+        <input type="text" name="search_query" placeholder="search in yt" id="search">
+        <button type="submit">submit</button>
+    </form>
+
+
+    <h2>checkbox in input</h2>
+    <p>the checkbox type element</p>
+
+
+    <form action="/server">
+        <label for="age">i am 18+</label>
+        <input type="checkbox" name="age" id="age" checked>
+    </form>
+
+    <p>&#x2022; the 'checked' means that when the page is loaded then the checkbix would be already checked</p>
+    <p>&#x2022; when submitted the form is passed as 'on' in the backend</p>
+
+
+
+    <br>
+    <h2>radio button</h2>
+    <p>the difference between checkboc and radio is that checkbox can be selected multiple but radio can only be
+        selected one</p>
+
+    <form action="/server">
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">apple</label>
+
+            <input type="radio" name="fruit" id="mango" value="mango">
+            <label for="mango">mango</label>
+
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">banana</label>
+        </div>
+        <button>submit</button>
+    </form>
+
+    <p>we give name same in each one as we have to select only one, and only one data can pass in forms in pair of name
+        and value</p>
+    <p>&#x2022; as buttons have value as on and of..so to tell which button we are selecting we have to tell value in
+        input itself</p>
+
+    <p>to group cells of radio or checkboxes we give the same name as only one value can be stored in one name in radio
+        <br>
+        <b>but the case if different in checkboxes, a name can store multiple value ...seperating them with '&amp;' sign
+            in url </b>
+    </p>
+
+    <p>example for checkbox</p>
+    <form action="/server">
+        <input type="checkbox" name="fruit" id="apple" value="apple">
+        <label for="apple">apple</label>
+
+        <input type="checkbox" name="fruit" id="mango" value="mango">
+        <label for="mango">mango</label>
+
+        <input type="checkbox" name="fruit" id="banana" value="banana">
+        <label for="banana">banana</label><br>
+
+        <button>submit</button>
+    </form>
+    <hr>
+
+    <h2>select element </h2>
+    <p>select element is used in forms to create a drop dowm type input </p>
+
+    <form action="/server">
+        select your profession
+        <select name="profession" id="profession">
+            <option>--select your profession--</option>
+            <option value="stu" selected>student</option>
+            <option value="stu">artist</option>
+            <option value="stu">dancer</option>
+            <option value="stu">editor</option>
+        </select>
+        <button>submit</button>
+    </form>
+
+    <p>the 'selected' word is written in order to tell the form that student is to be selected already when the form is
+        loaded</p>
+
+
+    <h2>range input</h2>
+    <p>the the data is to be given in a range we use this range option</p>
+    <p>the 'step' is used to increase the range in that defined bulk</p>
+    <p>here value is used to define the already defined range</p>
+
+    <form action="/server">
+        <label for="vol">volume</label>
+        <input type="range" name="vol" min="0" max="100" id="vol" value="66"><br>
+
+        <label for="vol2">volume</label>
+        <input type="range" name="vol" min="0" max="100" id="vol2" step="5">
+
+        <button>submit</button>
+    </form>
+
+    <h2>text area element</h2>
+    <p>this is ued to get greater text from use as the input lkike feedback and all</p>
+
+    <form action="/server">
+        <label for="feed">Please give your valuable feedback: </label>
+        <textarea name="feedback" id="feed" cols="30" rows="10" placeholder="write your feedback here "></textarea>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>

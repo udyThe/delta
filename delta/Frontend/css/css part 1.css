@@ -1,0 +1,32 @@
+
+        h1 {
+    color: rgb(17, 112, 222); background-color: pink;
+    }
+    h2{
+        color: aqua;
+    }
+    ul {
+        color: chartreuse;
+    }
+    p {
+        color: brown;
+    }
+
+    /* p {
+        color: brown;text-align: center;
+        width: 20%;
+        font-weight: 800; can write any font wweight till 800
+        font-weight: normal or bold;
+    } */
+
+    /* h3{
+        text-decoration: underline;
+        text-decoration: overline;
+        text-decoration: blue overline
+        text-decoration: underline; text-decoration-color: green;
+    } */
+/* 
+a {
+    text-decoration: none;
+} */
+

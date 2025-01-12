@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Part 3</title>
+    <style>
+        h2 {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body style="background-color: aquamarine;">
+    <h2>box model</h2>
+    <div>
+        <p>this model just states that everything is in a box form ....every heading and every paragraph etc is in a box
+            form
+            .... it consists of: <br>1. content <br>2. padding <br>3.border <br>4. margin <br>
+
+            <img src="box model.png" alt="example of box model"> <br> <br>
+            -- in this the content is where we write or put the object like paragraph or image etc <br> -- then padding
+            is the
+            space between the blank content and border <br> --then border is the line till where the element occupies
+            the space in the webpage <br>--then margin is the amount of space between the elements ...like if the images
+            are simultaneous then the space between is determined by the margin attribute
+        </p>
+    </div>
+
+    <h2>height width</h2>
+    <p>we can assign in pixels and percentage etc...its upon us.....if no content of inside ....like for say
+        paragraph...then no height or width is alloted</p>
+
+    <h2>border</h2>
+    <p>there are different parameters <br>1.width <br>2. style <br>3. color</p>
+    <p>we can define these seperatly also like <br> <br>h1{ <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;border-width: 2px; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;border-style: dashed; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;border-color: purple; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;width: 250px; <br>
+        } <br> <br>
+
+        but this is lenghty and slow process so we assign these properties in one line like: <br> <br> h1{
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;border: width | style | color <br> }</p>
+
+    <h3>border sides</h3>
+    <p>to control an individual side of border: <br>border-left <br>border-right <br>border-top <br>border-bottom <br>
+    </p>
+    <p>example : border-left-style: dashed;</p>
+
+    <h2>border radius</h2>
+    <p>to make the round border give radius to the border in pixels or whatever
+        to specify which corner to make round, specify the corner ....like: border-top-right-radius: 50px;
+    </p>
+
+    <h2>padding</h2>
+    <p>like border padding can also be set side wise... ex - padding-top: 10px;
+        <br> the padding shorthand can also be used <br> just declare size of the padding so it will set is evenly
+        ...but if we declare it in a clockwise we can declare all the size at once ... for ex- padding: 2px 3px 4px 5px;
+        <br> here we have declared all the sides
+    </p>
+
+    <h2>margin</h2>
+    <p>is used to set the space outside the border....left right top bottom can also be set <br> use just 'margin' to
+        set margin evenly <br> but as div is a block element so we cant decrease the right margin...so determine
+        different sizes we can asiign them in clockwise order... <br> # br can also be set to 0 ( right margin remains
+        though) </p>
+
+    <h2>display property</h2>
+    <p>block and inline property
+        in this we can assign in inline element to behave like a block element and visa versa
+        <br> ex - <br>h1{ <br> &nbsp;&nbsp;&nbsp;&nbsp;display: inline <br> } <br><br> span{
+        <br>&nbsp;&nbsp;&nbsp;display: block <br>} 
+
+
+        when a blosh element is converted into inline , the browser reads it as an inline element which leads the browser to treat them as inline , in which many block property cannot be held by inline elements....like height width and margin only works only horizontally
+    </p>
+
+    <h2>inline block</h2>
+    <p>it is a display peroperty which allows the block element to behave like inline element and keep its block properties</p>
+    <p>display: none; can also be used to make something disappear..... it is usually used for testing purpose</p>
+
+    <h2>relative unit</h2>
+    <h3>percentage</h3>
+    <p>this is used to set size with respect to the parent element</p>
+    <h3>em</h3>
+    <p>this is used to set text related size. <br> 'em' just means times or multiplied...like if the size is 20px then if i use 2em in the child element then the child will have twice its size .... if 1.5em then 1.5 times the size</p>
+    <h3>rem</h3>
+    <p>this is used to prevent the exponential grown of size in 'em' because it inherits from the one above, but in this 'rem' it only inherits form the parent</p>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+Set-ExecutionPolicy Restricted -Scope CurrentUser
+ 
+
+used to revert restriction …. the safest mode
+
+
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+this was used for setting a less restriction mode
